@@ -1,0 +1,127 @@
+/* Personalización del fondo */
+body {
+    background-image: url('/assets/fondoLOL.jpg'); /* Ruta de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: 90%; /* Muestra la imagen completa sin recortarla */
+    background-position: top center; /* Coloca la imagen centrada horizontalmente y en la parte superior */
+    background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
+    font-family: 'Rubik', sans-serif; /* Fuente personalizada */
+    color: #212529; /* Texto en color oscuro */
+    background-color: #000003; /* Fondo de color para áreas no cubiertas */
+}
+
+
+/* Estilización de las tarjetas */
+.card {
+    border-radius: 1rem; /* Bordes redondeados */
+    overflow: hidden; /* Para evitar que los bordes corten el contenido */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Animación al pasar el cursor */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Levanta la tarjeta ligeramente */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+}
+
+/* Imagen dentro de las tarjetas */
+.card-img-top {
+    height: 200px; /* Altura fija para uniformidad */
+    object-fit: cover; /* Escala las imágenes para que se ajusten */
+}
+
+/* Títulos de los campeones */
+.card-title {
+    text-transform: uppercase; /* Mayúsculas */
+    font-weight: 700; /* Negrita */
+    color: #343a40; /* Color gris oscuro */
+}
+
+/* Descripciones de los campeones */
+.card-text {
+    font-size: 0.9rem; /* Texto más pequeño */
+    color: #6c757d; /* Color gris claro */
+}
+
+/* Personalización de los badges (tipos de campeones) */
+.badge {
+    font-size: 0.8rem; /* Tamaño reducido */
+    padding: 0.4em 0.6em; /* Espaciado interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    text-transform: uppercase; /* Mayúsculas */
+}
+
+/* Colores personalizados para los tipos */
+.badge.controlador {
+    background-color: #A8A878; /* Gris controlador */
+    color: #212529; /* Texto oscuro */
+}
+
+.badge.luchador {
+    background-color: #F08030; /* Naranja luchador */
+    color: #fff; /* Texto blanco */
+}
+
+.badge.mago {
+    background-color: #6890F0; /* Azul mago */
+    color: #fff; /* Texto blanco */
+}
+
+.badge.tirador {
+    background-color: #78C850; /* Verde tirador */
+    color: #212529; /* Texto oscuro */
+}
+
+.badge.aniquilador {
+    background-color: #F8D030; /* Amarillo aniquilador */
+    color: #212529; /* Texto oscuro */
+}
+
+.badge.especialista {
+    background-color: #98D8D8; /* Turquesa especialista */
+    color: #212529; /* Texto oscuro */
+}
+
+.badge.tanque {
+    background-color: #C03028; /* Rojo tanque */
+    color: #fff; /* Texto blanco */
+}
+
+/* Navbar personalizado */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Ajusta el tamaño del logo */
+}
+
+.navbar-toggler-icon {
+    background-color: #343a40; /* Icono oscuro */
+}
+
+/* Botones de la barra de navegación */
+.btn {
+    font-weight: 600; /* Negrita */
+    border-radius: 50rem; /* Bordes totalmente redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: all 0.3s ease-in-out; /* Animación al pasar el cursor */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Contenedor principal */
+main {
+    padding-top: 2rem; /* Espaciado superior */
+}
+
+/* Diseño del contenedor de tarjetas */
+#listaCampeones {
+    display: flex;
+    flex-wrap: wrap; /* Permite múltiples filas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 1rem; /* Espaciado entre tarjetas */
+}
